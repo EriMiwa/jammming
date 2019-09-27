@@ -9,20 +9,51 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      searchResults: [],
-      playlistName: "",
-      playlistTracks: []
+      searchResults: [{
+        id: 0,
+        name: "some",
+        artist: "somesome",
+        album: "somesomesome"
+      },{
+        id: 1,
+        name: "some",
+        artist: "somesome",
+        album: "somesomesome"
+      }],
+      playlistName: "dammy",
+      playlistTracks: [{
+        id: 2,
+        name: "some",
+        artist: "somesome",
+        album: "somesomesome"
+      },{
+        id: 3,
+        name: "some",
+        artist: "somesome",
+        album: "somesomesome"
+      }]
     }
+    this.addTrack = this.addTrack.bind(this);
+  }
+
+  addTrack(track) {
+    let tracks = this.state.playlistTracks;
+    if (tracks.find(savedTrack => savedTrack.id === track.id)) {
+      return;
+    }
+
+    tracks.push(track);
+    this.setState({playlistTracks: tracks});
   }
 
   render() {
     return (
       <div>
-        <h1>Ja<span class="highlight">mmm</span>ing</h1>
-        <div class="App">
+        <h1>Ja<span className="highlight">mmm</span>ing</h1>
+        <div className="App">
           <SearchBar/>
-          <div class="App-playlist">
-            <SearchResults searchResults={this.state.searchResults}/>
+          <div className="App-playlist">
+            <SearchResults searchResults={this.state.searchResults} onAdd={this.addTrack}/>
             <Playlist playlistName={this.state.playlistName} 
                       playlistTracks={this.state.playlistTracks}/>
           </div>
