@@ -10,5 +10,5 @@ Understanding the usage of Spotify API and store data using Spotify account.
 ## 😤production periodß
 Around 2 weeks.
 
-![App image](./src/components/App/AppImg01.png
+![App image](https://raw.githubusercontent.com/EriMiwa/jammming/master/src/Components/App/AppImg01.png
  "App image")
