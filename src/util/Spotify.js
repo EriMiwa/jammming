@@ -1,5 +1,5 @@
 const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
-const redirectUri = 'http://localhost:3000/'; // Have to add this to my accepted Spotify redirect URIs on the Spotify API.
+const redirectUri = 'https://jammming-me.firebaseapp.com'; 
 let accessToken;
 
 const Spotify = {
