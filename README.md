@@ -7,7 +7,7 @@ HTML, CSS, React, Spotify API
 ## 📅the purpose of this project
 Understanding the usage of Spotify API and store data using Spotify account.
 
-## 😤production periodß
+## 😤production period
 Around 2 weeks.
 
 ![App image](https://raw.githubusercontent.com/EriMiwa/jammming/master/src/Components/App/AppImg01.png
