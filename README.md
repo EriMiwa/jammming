@@ -7,7 +7,8 @@ HTML, CSS, React, Spotify API
 ## 📅the purpose of this project
 Understanding the usage of Spotify API and store data using Spotify account.
 
-## 😤production period
+## 😤production periodß
 Around 2 weeks.
 
-![App image](http://i.imgur.com/Jjwsc.jpg "App image")
+![App image](./src/components/App/AppImg01.png
+ "App image")
